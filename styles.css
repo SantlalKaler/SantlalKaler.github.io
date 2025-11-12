@@ -162,19 +162,13 @@ html, body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .projects .cards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 500px) {
-  .projects .cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ===== PROJECT CARD (New Compact Design with Logo + Title) ===== */
+/* ===== PROJECT CARD ===== */
 .card.pro {
   background: var(--card);
   border-radius: 16px;
@@ -210,7 +204,7 @@ html, body {
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #56b6f0;
-  flex-shrink: 0; /* prevents logo from shrinking */
+  flex-shrink: 0;
 }
 
 .card-header h4 {
@@ -220,7 +214,6 @@ html, body {
   font-weight: 600;
   line-height: 1;
 }
-
 
 /* Description */
 .card.pro .description {
@@ -305,37 +298,117 @@ html, body {
   text-align: center;
 }
 
-/* Responsive Tweaks */
-@media (max-width: 900px) {
+/* ============================= */
+/* 📱 MOBILE RESPONSIVENESS FIXES */
+/* ============================= */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .header-inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .brand h1 {
+    font-size: 1rem;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     text-align: left;
+    padding: 32px 0;
+    gap: 20px;
   }
 
-  .profile {
-    text-align: center;
-    margin-top: 50px;
+  .hero h2 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
   }
 
   .avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #00bcd4;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    object-fit: cover;
-    margin-bottom: 20px;
+    max-width: 180px;
+    margin: 0 auto;
   }
 
   .projects .cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 
-  .menu-btn {
-    display: block;
+  .card.pro {
+    padding: 16px;
   }
 
-  .top-nav {
-    display: none;
+  .card-header {
+    gap: 10px;
+  }
+
+  .project-logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .card-header h4 {
+    font-size: 1rem;
+  }
+
+  .card.pro .description {
+    font-size: 0.85rem;
+  }
+
+  .card.pro .tech {
+    font-size: 0.8rem;
+  }
+
+  .links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .link {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+
+  .skill-list li {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+  }
+
+  .site-footer {
+    font-size: 0.85rem;
+    padding: 14px 0;
+  }
+}
+
+/* 🔹 Extra small devices (<=480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .hero h2 {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-header h4 {
+    font-size: 0.95rem;
   }
 }
