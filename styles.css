@@ -196,11 +196,13 @@ html, body {
 /* Header: Logo + Project Title */
 .card-header {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;   /* important fix */
   gap: 12px;
   margin-bottom: 10px;
 }
+
 
 .project-logo {
   width: 42px;
