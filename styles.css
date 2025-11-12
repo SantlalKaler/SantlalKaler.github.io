@@ -174,7 +174,7 @@ html, body {
   }
 }
 
-/* Project Cards */
+/* ===== Project Cards (Updated Compact Version) ===== */
 .card.pro {
   background: linear-gradient(180deg, #0c1525, #0b1220);
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -182,6 +182,9 @@ html, body {
   border-radius: 14px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card.pro:hover {
@@ -189,7 +192,7 @@ html, body {
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.8);
 }
 
-/* Project Header (Logo + Title) */
+/* Header: Logo + Title */
 .project-header {
   display: flex;
   align-items: center;
@@ -214,17 +217,20 @@ html, body {
   font-weight: 600;
 }
 
+/* Description */
 .card.pro .desc {
   color: var(--text);
-  font-size: 0.95rem;
-  line-height: 1.4;
-  margin: 10px 0 12px;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  margin: 8px 0 10px;
+  min-height: 48px;
 }
 
+/* Tech Line */
 .card.pro .tech {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--muted);
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .card.pro .tech strong {
@@ -232,19 +238,19 @@ html, body {
   font-weight: 600;
 }
 
-/* Card Links */
+/* Links */
 .links {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 
 .links .link {
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   color: var(--accent);
   background: rgba(255, 255, 255, 0.03);
-  padding: 6px 12px;
-  border-radius: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: 500;
   transition: background 0.25s ease, transform 0.2s ease;
