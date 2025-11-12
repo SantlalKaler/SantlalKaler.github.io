@@ -196,6 +196,7 @@ html, body {
 /* Header: Logo + Project Title */
 .card-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 12px;
   margin-bottom: 10px;
