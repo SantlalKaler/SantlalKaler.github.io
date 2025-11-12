@@ -62,76 +62,20 @@ html,body{height:100%;margin:0;background:linear-gradient(180deg,#071226 0%, #07
   .top-nav{display:none}
 }
 
-/* Add-on Skills */
-.addon-skills {
-  margin-top: 60px;
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+  color: var(--accent);
+  text-align: left;
 }
 
-.addon-skills .desc {
-  color: #9aa4b2;
-  font-size: 15px;
-  margin-bottom: 20px;
+.addons .cards .card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.addon-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+.addons .cards .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
-.addon-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  padding: 18px;
-  transition: all 0.25s ease;
-}
-
-.addon-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.addon-head {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-}
-
-.addon-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: #fff;
-  font-size: 20px;
-}
-
-.addon-icon.android {
-  background: linear-gradient(135deg, #3ddc84, #15a37b);
-}
-
-.addon-icon.mern {
-  background: linear-gradient(135deg, #61dbfb, #2d8fff);
-}
-
-.addon-icon.ai {
-  background: linear-gradient(135deg, #ffd86b, #ff9a3c);
-  color: #000;
-}
-
-.addon-info h4 {
-  font-size: 17px;
-  margin-bottom: 6px;
-}
-
-.addon-info p {
-  font-size: 14px;
-  color: #9aa4b2;
-  line-height: 1.4;
-}
 
