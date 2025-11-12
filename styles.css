@@ -195,29 +195,32 @@ html, body {
 
 /* Header: Logo + Project Title */
 .card-header {
-  display: flex;
+  display: flex !important;
+  flex-direction: row !important;
   align-items: center;
   justify-content: flex-start;
-  flex-wrap: nowrap;   /* important fix */
   gap: 12px;
   margin-bottom: 10px;
+  white-space: nowrap;
 }
-
 
 .project-logo {
   width: 42px;
   height: 42px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--accent);
+  border: 2px solid #56b6f0;
+  flex-shrink: 0; /* prevents logo from shrinking */
 }
 
 .card-header h4 {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--text);
   margin: 0;
+  color: var(--accent);
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
 }
+
 
 /* Description */
 .card.pro .description {
